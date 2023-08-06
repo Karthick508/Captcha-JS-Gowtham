@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha with Audio</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for styling */
+        .captcha-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container captcha-container">
+        <div class="form-group">
+            <!-- Captcha Input Field -->
+            <label for="captcha">Captcha:</label>
+            <input type="text" class="form-control" id="captcha" placeholder="Enter the code">
+        </div>
+        <div class="form-group">
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- Audio Symbol -->
+            <span class="ml-2">
+                <a href="#" onclick="playAudio()">
+                    <i class="fa fa-volume-up"></i> Audio
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <!-- Link to Font Awesome for the audio symbol -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <!-- Custom JavaScript for playing audio -->
+    <script>
+        function playAudio() {
+            // Replace 'your-audio-url' with the URL of the captcha audio
+            const audioUrl = 'your-audio-url';
+            const audio = new Audio(audioUrl);
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>
+
+

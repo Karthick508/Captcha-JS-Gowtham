@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet" />
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+
+</head>
+
+<body onload="createCaptcha()">
+    <div class="container captcha-container">
+
+        <form onsubmit="validateCaptcha()">
+            <span>
+                <a href="javascript:void(0);" onclick="playCaptcha()()">
+                    <i class="fa fa-volume-up"></i> Audio
+                </a>
+            </span>
+            <div id="captcha"></div>
+            <input type="text" placeholder="Captcha" id="cpatchaTextBox" />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <script src="./index.js"></script>
+    </div>
+</body>
+
+</html>
